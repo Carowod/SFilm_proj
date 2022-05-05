@@ -1,0 +1,152 @@
+.passp-bg {
+  min-width: 780px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 110%;
+  height: 110%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+@media only screen and (min-height: 810px), only screen and (min-width: 1440px) {
+  .passp-bg_move {
+    background-image: url(D:\Work-study\S_Film\SFilm_proj\src\img\4_bg.jpeg);
+  }
+}
+
+@media only screen and (min-height: 720px), only screen and (min-width: 1280px) {
+  .passp-bg_move {
+    background-image: url(D:\Work-study\S_Film\SFilm_proj\src\img\4_bg.jpeg);
+  }
+}
+
+@media only screen and (min-height: 0), only screen and (min-width: 700px) {
+  .passp-bg_move {
+    background-image: url(D:\Work-study\S_Film\SFilm_proj\src\img\4_bg.jpeg);
+  }
+}
+
+body {
+  background-color: #000000;
+  width: 100%;
+  height: 700px;
+  margin: 0;
+}
+
+form {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  position: absolute;
+  margin: 0 auto;
+  left: 20%;
+  right: 30%;
+  top: 30%;
+  width: 400px;
+  height: 500px;
+}
+
+.email_input {
+  top: 20px;
+  position: relative;
+}
+
+.email_input .email_layout {
+  text-align: center;
+  font-size: 18px;
+  width: 338px;
+  height: 55px;
+  background: #FBFBFB;
+  border: 2px solid #585858;
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+}
+
+.email_input .email_layout:focus {
+  text-align: left;
+  font-size: 18px;
+}
+
+.email_input h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.password_input {
+  top: 40px;
+  position: relative;
+}
+
+.password_input .password_layout {
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  width: 338px;
+  height: 55px;
+  background: #FBFBFB;
+  border: 2px solid #585858;
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+}
+
+.password_input .password_layout:focus {
+  text-align: left;
+  font-size: 18px;
+}
+
+.password_input h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.button_reg {
+  position: relative;
+  width: 338px;
+  height: 55px;
+  top: 60px;
+  background: #FFEC42;
+  border-radius: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: #131313;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.button_reg:hover {
+  transform: scale(0.99, 0.99);
+}
+
+.error_mes {
+  color: #b61919;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pass_repair {
+  position: relative;
+  margin-top: 75px;
+  color: #ffffff;
+  font-weight: 300;
+  margin-left: 110px;
+  float: left;
+}
+
+.pass_repair:hover {
+  color: #FFEC42;
+}
