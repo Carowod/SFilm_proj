@@ -1,52 +1,49 @@
+.type_form {
+  color: #ffffff;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 .passp-bg {
+  display: flex;
+  z-index: 20;
   min-width: 780px;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
-}
-
-@media only screen and (min-height: 810px), only screen and (min-width: 1440px) {
-  .passp-bg_move {
-    background-image: url(D:\Work-study\S_Film\SFilm_proj\src\img\4_bg.jpeg);
-  }
-}
-
-@media only screen and (min-height: 720px), only screen and (min-width: 1280px) {
-  .passp-bg_move {
-    background-image: url(D:\Work-study\S_Film\SFilm_proj\src\img\4_bg.jpeg);
-  }
-}
-
-@media only screen and (min-height: 0), only screen and (min-width: 700px) {
-  .passp-bg_move {
-    background-image: url(D:\Work-study\S_Film\SFilm_proj\src\img\4_bg.jpeg);
-  }
+  background-image: url("../../../img/4_bg.jpeg");
 }
 
 body {
-  background-color: #000000;
+  background-color: #ffffff;
   width: 100%;
   height: 700px;
   margin: 0;
+  box-sizing: border-box;
 }
 
 form {
+  position: relative;
+  justify-self: center;
+  align-self: center;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 15px;
-  position: absolute;
   margin: 0 auto;
-  left: 20%;
-  right: 30%;
-  top: 30%;
   width: 400px;
   height: 500px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
 }
 
 .email_input {
@@ -64,11 +61,11 @@ form {
   box-sizing: border-box;
   backdrop-filter: blur(4px);
   border-radius: 12px;
+  font-size: 18px;
 }
 
 .email_input .email_layout:focus {
   text-align: left;
-  font-size: 18px;
 }
 
 .email_input h3 {
@@ -100,7 +97,6 @@ form {
 
 .password_input .password_layout:focus {
   text-align: left;
-  font-size: 18px;
 }
 
 .password_input h3 {

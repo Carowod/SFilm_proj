@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './styles/form_style.min.css'
-import background from '..//..//img/bcgr.png'
+import '../../img/4_bg.jpeg'
 const Registration = ()=>{
 
     const[email, setMail] = useState('')
@@ -27,9 +27,9 @@ const Registration = ()=>{
 
     const passwordHandler = (e)=>{
         setPassword(e.target.value)
-        if(e.target.value.length < 4 || e.target.value.length > 16)
+        if(e.target.value.length < 5 || e.target.value.length > 25)
         {
-            setPasswordErrorMess('Пароль должен быть длинее 4 и меньше 16')
+            setPasswordErrorMess('Пароль должен быть длинее 5 и меньше 25')
         }
         else
         {
@@ -50,28 +50,24 @@ const Registration = ()=>{
         }
     }
 
-    let bg = document.querySelector('.passp-bg_move');
-    window.addEventListener('mousemove', function (e) {
-        let x = e.clientX / window.innerWidth;
-        let y = e.clientY / window.innerHeight;
-        bg.style.transform = 'translate(-' + x * 10 + 'px, -' + y * 10 + 'px)';
-    });
-
+ 
     return(
-        <div className="passp-bg passp-bg_move">
+        <div className="passp-bg">
             <form>
+                <div className="type_form">
+                    <h3>Регистрация</h3>
+                </div>
                 <div className="email_input">
                     {(emailWrong && emailErrorMess) && <div className="error_mes">{emailErrorMess}</div>}
                     <h3>E-mail</h3>
-                    <input onChange={e=> emailHandler(e)} className="email_layout" onBlur={e => blurHandler(e)} name="email" type="text" placeholder="Enter your email!" />
+                    <input onChange={e=> emailHandler(e)} className="email_layout" onBlur={e => blurHandler(e)} name="email" type="text" placeholder="Введите ваш E-Mail!" />
                 </div>
                 <div className="password_input">
                     {(passwordErrorMess && passwordWrong) &&<div className="error_mes">{passwordErrorMess}</div>}  
                     <h3>Пароль</h3>    
-                    <input onChange={e=> passwordHandler(e)} className="password_layout" onBlur={e => blurHandler(e)} name="password" type="password" placeholder="Enter your password!" />
+                    <input onChange={e=> passwordHandler(e)} className="password_layout" onBlur={e => blurHandler(e)} name="password" type="password" placeholder="Введите ваш пароль!" />
                 </div>
                 <button className="button_reg" type="submit">Регистрация</button>
-                <a><h3 className="pass_repair">Восстановить пароль</h3></a>
             </form>
 
             <style>
