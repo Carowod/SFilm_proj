@@ -1,0 +1,59 @@
+.hot-new {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 1500px;
+  min-width: 950px;
+}
+
+.card_main {
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.card {
+  width: 220px;
+  height: 100px;
+  overflow: hidden;
+  border-color: #ffffff;
+  border-style: none;
+}
+
+.hiden-card {
+  display: none;
+}
+
+.img-card {
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  background-color: #ffffff;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.card:hover .hiden-card {
+  opacity: 0.3;
+  background-color: #252525;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    width: 170px;
+    height: 80px;
+  }
+}

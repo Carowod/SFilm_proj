@@ -1,0 +1,7 @@
+.main-general {
+  display: flexbox;
+  width: 100%;
+  top: 60px;
+  background-color: #fff;
+  box-sizing: border-box;
+}

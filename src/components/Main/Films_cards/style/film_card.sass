@@ -1,0 +1,92 @@
+.film_cards_item
+    position: relative
+    width: 100%
+    height: auto
+    margin: 0 auto
+    max-width: 1500px
+    min-width: 950px
+
+.cards_item
+    list-style: none
+    width: 100% 
+    padding: 20px 20px 20px 20px
+    justify-content: space-between
+    display: flex
+    white-space: nowrap
+    overflow: hidden
+
+.item
+    white-space: nowrap
+    width: 192px
+    height: auto
+    display: flexbox
+    border-color: #ffffff
+    border-style: none
+    cursor: default
+    transition: 0.3s
+    &:nth-child(n+6)
+        display: none
+    &:nth-child(n+5)
+        margin-right: 40px
+        
+    &:hover
+        transform: scale(1.05,1.05)
+        h3
+            color: #2e49c5
+        span
+            color: #222222
+            font-weight: 400
+            outline: 2px #2e2e2e 
+
+.cards_item_block
+    
+    white-space: nowrap
+    background-color: #ffffff
+    overflow: hidden
+
+
+.hiden-card
+    display: block
+    color: #252525
+    position: relative
+    text-align: start
+    cursor: default
+    h3
+        font-weight: 500
+        font-size: 16px
+        margin-top: 0px
+        margin-left: 5px
+         
+
+.img-item
+    width: 192px
+    height: 275px
+
+.category_item, .year_item
+    color: #7c7c7c
+    font-size: 12px
+    font-weight: 400
+    line-height: 18px
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    transition: 0.2s
+    cursor: default
+    &:hover
+        cursor: default
+
+
+.category_film_title
+    margin-top: 50px
+    width: 100%
+    padding: 0px 0px 0px 20px
+    box-sizing: border-box
+    text-align: start
+    span
+        color: #272727
+        font-weight: 400
+        font-size: 24px
+        cursor: default
+        transition: 0.2s
+        &:hover
+            color: #2e49c5

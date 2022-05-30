@@ -1,0 +1,58 @@
+
+@mixin center($width: null, $height: null) 
+  position: absolute
+  top: 50%
+  left: 50%
+ 
+  @if not $width and not $height 
+    transform: translate(-50%, -50%)
+
+  @else if $width and $height 
+    width: $width
+    height: $height
+    margin: -($width / 2) #{0 0} -($height / 2)
+  @else if not $height 
+    width: $width
+    margin-left: -($width / 2)
+    transform: translateY(-50%)
+  @else 
+    height: $height
+    margin-top: -($height / 2)
+    transform: translateX(-50%)
+  
+
+  
+.App 
+  display: flexbox
+  text-align: center
+  position: absolute
+  width: 100%
+  height: 100%
+
+.App-logo 
+  height: 40vmin
+
+
+
+.App-header 
+  background-color: #313131
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  font-size: calc(10px + 2vmin)
+  color: white
+
+.App-link 
+  color: #919191
+
+
+@keyframes App-logo-spin 
+  from 
+    transform: rotate(0deg)
+  
+  to 
+    transform: rotate(360deg)
+  
+
